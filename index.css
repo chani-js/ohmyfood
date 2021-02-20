@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body h1,
+body h2 {
+  font-family: "Shrikhand";
+}
+
+/* partie restaurant */
+.rest-card {
+  object-fit: cover;
+}
+.rest-card img {
+  width: 90%;
+}
+
+/*# sourceMappingURL=index.css.map */
