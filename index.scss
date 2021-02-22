@@ -1,17 +1,68 @@
+/* variables*/
+$padding: 15px;
+$border-rad: 15px;
+$primary: #9356dc;
+$secondary: #dd79da;
+$tertiaire: #99e2d0;
+
+@mixin display-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 body {
-    box-sizing: border-box;
-    font-family: "Roboto";
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    width: 100%;
     h1,
     h2 {
-        font-family: "Shrikhand";
+        font-family: Shrikhand, sans-serif;
     }
 }
 
+/*partie header */
+.titre {
+    text-align: center;
+}
+.search {
+    input {
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding: $padding;
+        background-color: #f3f3f3;
+    }
+}
+.slogan {
+    h2 {
+        @include display-center();
+        width: 50%;
+    }
+    p {
+        @include display-center();
+        width: 60%;
+    }
+}
+
+.explore {
+    @include display-center();
+    padding: $padding;
+    border-radius: $border-rad + 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    background-image: linear-gradient(0deg, $primary, $secondary);
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    transition-duration: .30s;
+}
 
 /* partie restaurant */
 .rest-card {
-    object-fit: cover;
     img {
         width: 90%;
+        object-fit: cover;
+        height: 200px;
     }
 }
