@@ -1,12 +1,13 @@
 /* variables*/
-body {
-  margin: 0;
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Roboto, sans-serif;
   width: 100%;
 }
 
-body h1,
-body h2 {
+body * h1,
+body * h2 {
   font-family: Shrikhand, sans-serif;
 }
 
@@ -23,12 +24,18 @@ body h2 {
   background-color: #f3f3f3;
 }
 
-.slogan h2 {
+.slogan {
+  width: 80%;
+  margin: auto;
+}
+
+.slogan h3 {
+  font-weight: 700;
+  font-size: 1.6em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 50%;
 }
 
 .slogan p {
@@ -36,7 +43,6 @@ body h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 60%;
 }
 
 .explore {
@@ -45,6 +51,7 @@ body h2 {
   margin-right: auto;
   text-align: center;
   padding: 15px;
+  width: 80%;
   border-radius: 25px;
   color: white;
   cursor: pointer;
@@ -53,15 +60,54 @@ body h2 {
   background-image: linear-gradient(0deg, #9356dc, #dd79da);
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  -webkit-transition-duration: .30s;
-          transition-duration: .30s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+/* partie Fonctionnement*/
+li {
+  position: relative;
+}
+
+li:before {
+  background: #9356dc;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 100px;
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  left: -10px;
+}
+
+.operation-card {
+  display: inline-block;
+  margin-top: 15px;
+  width: 90%;
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 /* partie restaurant */
+.restaurant {
+  background-color: #f3f3f3;
+}
+
 .rest-card img {
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
 }
 /*# sourceMappingURL=index.css.map */

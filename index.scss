@@ -5,6 +5,8 @@ $primary: #9356dc;
 $secondary: #dd79da;
 $tertiaire: #99e2d0;
 
+
+
 @mixin display-center {
     display: block;
     margin-left: auto;
@@ -12,8 +14,19 @@ $tertiaire: #99e2d0;
     text-align: center;
 }
 
-body {
-    margin: 0;
+@mixin li-fonct {
+    background: $primary;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 100px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+body * {
+    box-sizing: border-box;
     font-family: Roboto, sans-serif;
     width: 100%;
     h1,
@@ -36,33 +49,64 @@ body {
     }
 }
 .slogan {
-    h2 {
+    width: 80%;
+    margin: auto;
+    h3 {
+        font-weight: 700;
+        font-size: 1.6em;
         @include display-center();
-        width: 50%;
     }
     p {
         @include display-center();
-        width: 60%;
     }
 }
 
 .explore {
     @include display-center();
     padding: $padding;
+    width: 80%;
     border-radius: $border-rad + 10px;
     color: white;
     cursor: pointer;
     font-size: 1.1em;
     background-image: linear-gradient(0deg, $primary, $secondary);
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    transition-duration: .30s;
+    transition-duration: 0.3s;
+}
+
+/* partie Fonctionnement*/
+
+li {
+    position: relative;
+
+    &:before {
+        @include li-fonct();
+        content: '';
+        display: block;
+        position: absolute;
+        left: -10px;
+    }
+}
+.operation-card {
+    display: inline-block;
+    margin-top: 15px;
+    width: 90%;
+    background-color: #f3f3f3;
+    padding: $padding;
+    border-radius: $border-rad;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
 /* partie restaurant */
+.restaurant {
+    background-color: #f3f3f3;
+}
 .rest-card {
     img {
         width: 90%;
         object-fit: cover;
         height: 200px;
+        border-radius: $border-rad $border-rad 0 0;
+        background-color: #fff;
     }
 }
