@@ -1,1 +1,93 @@
-/* No CSS *//*# sourceMappingURL=menu.css.map */
+@charset "UTF-8";
+/* variables*/
+/*Général*/
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+body * h1,
+body * h2 {
+  font-family: Shrikhand, sans-serif;
+}
+
+/* header*/
+.titre {
+  text-align: center;
+}
+
+/* container*/
+.restau-container {
+  background-color: #f3f3f3f3;
+  border-radius: 15px;
+}
+
+.restau-container .choice {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 15px;
+  height: auto;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.plate-name {
+  width: 80%;
+}
+
+.price {
+  width: 20%;
+  text-align: center;
+}
+
+.price .euro {
+  margin-top: 10px;
+}
+
+.title {
+  border-bottom: 3px solid #99e2d0;
+  width: 10%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.explore {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 15px;
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.1em;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#dd79da));
+  background-image: linear-gradient(0deg, #9356dc, #dd79da);
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+footer {
+  padding: 10px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #333333;
+}
+/*# sourceMappingURL=menu.css.map */

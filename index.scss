@@ -33,6 +33,16 @@ body * {
     h2 {
         font-family: Shrikhand, sans-serif;
     }
+    cursor: pointer;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+    
+}
+.fa-heart:active{
+    background-image: linear-gradient(0deg, $primary, $secondary);
 }
 
 /*partie header */
