@@ -1,5 +1,30 @@
 @charset "UTF-8";
 /* variables*/
+@-webkit-keyframes slideup {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideup {
+  from {
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -33,6 +58,8 @@ body * h2 {
   margin-top: -20px;
   position: relative;
   z-index: 40;
+  -webkit-animation: slideup 1.5s;
+          animation: slideup 1.5s;
 }
 
 .restau-container .choice {

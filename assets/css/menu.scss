@@ -13,6 +13,18 @@ $greyfont: #f3f3f3f3;
     text-align: center;
 }
 
+
+@keyframes slideup {
+    from {
+        transform: translateY(200px) ;
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
 html, body{ 
     margin: 0;
     padding: 0;}
@@ -43,6 +55,8 @@ body * {
     margin-top: -20px;
     position: relative;
     z-index: 40;
+    
+    animation: slideup 1.5s;
     .choice {
         width: 100%;
         background-color: white;
@@ -100,3 +114,8 @@ footer{
         font-size: 200;
     }
 }
+
+
+
+
+
