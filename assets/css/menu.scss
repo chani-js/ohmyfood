@@ -13,21 +13,22 @@ $greyfont: #f3f3f3f3;
     text-align: center;
 }
 
-
 @keyframes slideup {
     from {
-        transform: translateY(200px) ;
-        opacity:0;
+        transform: translateY(200px);
+        opacity: 0;
     }
     to {
         transform: translateY(0);
-        opacity:1;
+        opacity: 1;
     }
 }
 
-html, body{ 
+html,
+body {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 /*Général*/
 body * {
     box-sizing: border-box;
@@ -41,11 +42,18 @@ body * {
     }
 }
 
-
-
 /* header*/
-.titre{
-    text-align: center;
+
+.header{
+    width: 100%;
+    display: flex;
+    align-self: start;
+    .titre{
+        margin-right: 130px;
+    }
+    i{
+        margin: 10px;
+    }
 }
 /* container*/
 .restau-container {
@@ -55,8 +63,6 @@ body * {
     margin-top: -20px;
     position: relative;
     z-index: 40;
-    
-    animation: slideup 1.5s;
     .choice {
         width: 100%;
         background-color: white;
@@ -67,15 +73,16 @@ body * {
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
         display: flex;
         flex-direction: row;
+        animation: slideup 1.5s;
     }
 }
-.plate-name{
+.plate-name {
     width: 80%;
 }
-.price{
+.price {
     width: 20%;
     text-align: center;
-    .euro{
+    .euro {
         margin-top: 10px;
     }
 }
@@ -84,10 +91,8 @@ body * {
     border-bottom: 3px solid #99e2d0;
     width: 10%;
     margin-top: 30px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
-
-
 
 .explore {
     @include display-center();
@@ -100,22 +105,28 @@ body * {
     cursor: pointer;
     font-size: 1.1em;
     background-image: linear-gradient(0deg, $primary, $secondary);
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0.25rem 0.25rem 10px rgba(207, 205, 205, 0.25);
     transition-duration: 0.3s;
 }
 
-
-footer{
+footer {
     padding: 10px;
     font-size: 0.9em;
     color: #fff;
     background-color: lighten($color: black, $amount: 20%);
-    h2{
+    h2 {
         font-size: 200;
     }
+    p{
+        margin-top: 10px;
+        
+    }
 }
-
-
-
-
-
+.i-white{
+    color: white;
+}
+.titr{
+    width: 100%;
+    display: flex;
+    align-self: start;
+}
