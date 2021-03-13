@@ -1,5 +1,6 @@
 /* variables*/
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -9,6 +10,7 @@ body * {
           box-sizing: border-box;
   font-family: Roboto, sans-serif;
   width: 100%;
+  cursor: pointer;
   cursor: pointer;
 }
 
@@ -45,7 +47,7 @@ a:link {
   margin: auto;
 }
 
-.slogan h3 {
+.slogan .slogan h3 {
   font-weight: 700;
   font-size: 1.6em;
   display: block;
@@ -81,41 +83,59 @@ a:link {
 }
 
 /* partie Fonctionnement*/
-li {
-  position: relative;
+.operation h3 {
+  padding: 10px;
 }
 
-li:before {
-  background: #9356dc;
-  height: 1.6rem;
-  width: 1.6rem;
-  border-radius: 100px;
-  display: block;
+.op-card {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.op-card i {
+  display: inline;
+  margin-right: 5px;
+}
+
+.op-number {
+  height: 25px;
+  width: 25px;
+  margin-left: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
-  content: '';
-  display: block;
-  position: absolute;
-  left: -10px;
-}
-
-.operation-card {
-  display: inline-block;
-  margin-top: 15px;
-  width: 90%;
-  background-color: #f3f3f3;
-  padding: 15px;
-  border-radius: 15px;
-  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #9356dc;
 }
 
 /* partie restaurant */
 .restaurant {
   background-color: #f3f3f3;
+}
+
+.restaurant h3 {
+  padding: 10px;
+}
+
+.rest-card {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
 }
 
 .rest-card img {
@@ -126,4 +146,19 @@ li:before {
   border-radius: 15px 15px 0 0;
   background-color: #fff;
 }
+
+/* test coeur
+.icone:hover{
+        visibility: hidden;
+        .hover-icone{
+            visibility: visible;
+            color: $primary;
+        }
+    }
+
+.hover-icone{
+    i{
+        visibility: hidden;
+    }
+}*/
 /*# sourceMappingURL=index.css.map */
