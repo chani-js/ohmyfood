@@ -54,6 +54,8 @@ a:link {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .slogan p {
@@ -101,7 +103,6 @@ a:link {
 
 .op-card i {
   display: inline;
-  margin-right: 5px;
 }
 
 .op-card:active {
@@ -145,29 +146,62 @@ a:link {
           flex-direction: column;
 }
 
-.restaurant h3 {
-  padding: 10px;
+.restaurant h2 {
+  padding: 5px 10px;
+  font-family: Roboto, sans-serif;
 }
 
 .rest-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
   width: 90%;
   margin: auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  margin-bottom: 15px;
 }
 
 .rest-card img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
-  border-radius: 15px 15px 0 0;
-  background-color: #fff;
+}
+
+.rest-card a {
+  color: black;
+}
+
+.rest-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.rest-text p {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.rest-text .marge {
+  margin: 0;
 }
 
 .rest-title {
-  background-color: white;
+  width: 70%;
+}
+
+.icone {
+  width: 10%;
 }
 
 /* Footer*/
