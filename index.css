@@ -90,20 +90,26 @@ a:link {
 .op-card {
   width: 80%;
   margin: auto;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
-  text-align: center;
   margin-bottom: 15px;
 }
 
 .op-card i {
   display: inline;
   margin-right: 5px;
+}
+
+.op-card:active {
+  background-color: #e7a2e5;
+}
+
+.op-card:active .grey {
+  color: #9356dc;
 }
 
 .op-number {
@@ -123,9 +129,20 @@ a:link {
   background-color: #9356dc;
 }
 
+.grey {
+  color: gray;
+}
+
 /* partie restaurant */
 .restaurant {
   background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .restaurant h3 {
@@ -133,18 +150,46 @@ a:link {
 }
 
 .rest-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  width: 90%;
   margin: auto;
-  padding: 10px;
-  text-align: center;
 }
 
 .rest-card img {
-  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
   border-radius: 15px 15px 0 0;
   background-color: #fff;
+}
+
+.rest-title {
+  background-color: white;
+}
+
+/* Footer*/
+footer {
+  background-color: #353535;
+  width: 100%;
+  color: white;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-logo p {
+  width: 80%;
+}
+
+.footer-logo i {
+  display: inline;
+  width: 10%;
 }
 
 /* test coeur
