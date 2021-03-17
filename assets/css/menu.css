@@ -96,6 +96,14 @@ body * h2 {
 
 .plate-name {
   width: 80%;
+  padding: 10px;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .price {
@@ -104,7 +112,7 @@ body * h2 {
 }
 
 .price .euro {
-  margin-top: 10px;
+  padding-top: 20px;
 }
 
 .title {
@@ -136,7 +144,7 @@ body * h2 {
 }
 
 /* Footer*/
-footer {
+.footer {
   background-color: #353535;
   width: 100%;
   color: white;
@@ -149,7 +157,7 @@ footer {
           flex-direction: column;
 }
 
-.footer {
+.footer-titre {
   padding: 10px;
 }
 
@@ -166,5 +174,10 @@ footer {
 .footer-logo i {
   display: inline;
   width: 10%;
+}
+
+.footer-mention {
+  padding: 0;
+  margin: 0;
 }
 /*# sourceMappingURL=menu.css.map */

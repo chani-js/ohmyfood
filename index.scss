@@ -22,6 +22,69 @@ $tertiaire: #99e2d0;
     align-items: center;
     color: #fff;
 }
+
+/*animation*/
+@keyframes loader-animation{
+    0%{
+        opacity: 1;
+        visibility: visible;
+        color: $primary;
+         
+     }
+     90%{
+         opacity: 1;
+         color: $secondary;
+     }
+     100%{
+         opacity: 0;
+         visibility: hidden;
+     }
+
+
+}
+.loader{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(127, 129, 129, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    animation: loader-animation 3s forwards;
+    .animation{
+        display: inline-block;
+        border-radius: 100px;
+        border: 30px solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: $primary;
+    }
+    .animation1{
+        display: inline-block;
+        border-radius: 100px;
+        border: 30px solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: $secondary;
+    }
+    .animation2{
+        display: inline-block;
+        border-radius: 100px;
+        border: 30px solid;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: $tertiaire;
+    }
+}
+
+
 html,
 body {
     margin: 0;
@@ -31,7 +94,6 @@ body {
 body * {
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    width: 100%;
     cursor: pointer;
     h1,
     h2 {
@@ -148,6 +210,7 @@ a:link {
         object-fit: cover;
         height: 200px;
         border-radius: $border-rad $border-rad 0 0;
+        width: 100%;
     }
     a{
         color: black;
@@ -174,6 +237,16 @@ a:link {
 .icone{
     width: 10%;
     
+}
+.color-hover{
+    display: none;
+    position: relative;
+    top: -20px;
+    color: $primary;
+    
+}
+.color-hover:hover{
+        display: initial;
 }
 
 /* Footer*/
@@ -202,22 +275,5 @@ a:link {
     padding: 0;
     margin: 0;
 }
-.color-hover{
-    color: $primary;
-    position: relative;
-    top: -20px;
-}
-/* test coeur
-.icone:hover{
-        visibility: hidden;
-        .hover-icone{
-            visibility: visible;
-            color: $primary;
-        }
-    }
 
-.hover-icone{
-    i{
-        visibility: hidden;
-    }
-}*/
+

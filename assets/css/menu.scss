@@ -44,14 +44,14 @@ body * {
 
 /* header*/
 
-.header{
+.header {
     width: 100%;
     display: flex;
     align-self: start;
-    .titre{
+    .titre {
         margin-right: 130px;
     }
-    i{
+    i {
         margin: 10px;
     }
 }
@@ -78,12 +78,19 @@ body * {
 }
 .plate-name {
     width: 80%;
+    padding: 10px;
 }
+.overflow-ellipsis {
+    white-space: nowrap; 
+      width: 95%; 
+      overflow: hidden;
+      text-overflow: ellipsis; 
+  }
 .price {
     width: 20%;
     text-align: center;
     .euro {
-        margin-top: 10px;
+        padding-top: 20px;
     }
 }
 
@@ -111,19 +118,18 @@ body * {
 
 /* Footer*/
 
-footer {
+.footer {
     background-color: #353535;
     width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
 }
-.footer{
+.footer-titre{
     padding: 10px;
 }
 .footer-logo {
     display: flex;
-    
     p {
         width: 80%;
     }
@@ -132,6 +138,7 @@ footer {
         width: 10%;
     }
 }
-
-
-
+.footer-mention{
+    padding: 0;
+    margin: 0;
+}
