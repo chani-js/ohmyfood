@@ -109,26 +109,28 @@ body * {
     transition-duration: 0.3s;
 }
 
+/* Footer*/
+
 footer {
-    padding: 10px;
-    font-size: 0.9em;
-    color: #fff;
-    background-color: lighten($color: black, $amount: 20%);
-    h2 {
-        font-size: 200;
-    }
-    p{
-        margin-top: 10px;
-        
-    }
-}
-.i-white{
-    color: white;
-}
-.titr{
+    background-color: #353535;
     width: 100%;
+    color: white;
     display: flex;
-    align-self: start;
+    flex-direction: column;
+}
+.footer{
+    padding: 10px;
+}
+.footer-logo {
+    display: flex;
+    
+    p {
+        width: 80%;
+    }
+    i {
+        display: inline;
+        width: 10%;
+    }
 }
 
 

@@ -168,6 +168,7 @@ a:link {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
+  border-radius: 15px 15px 0 0;
 }
 
 .rest-card a {
@@ -205,10 +206,21 @@ a:link {
 }
 
 /* Footer*/
-footer {
+.footer {
   background-color: #353535;
   width: 100%;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-titre {
+  padding: 10px;
 }
 
 .footer-logo {
@@ -224,6 +236,17 @@ footer {
 .footer-logo i {
   display: inline;
   width: 10%;
+}
+
+.footer-mention {
+  padding: 0;
+  margin: 0;
+}
+
+.color-hover {
+  color: #9356dc;
+  position: relative;
+  top: -20px;
 }
 
 /* test coeur

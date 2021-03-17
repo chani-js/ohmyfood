@@ -147,6 +147,7 @@ a:link {
     img {
         object-fit: cover;
         height: 200px;
+        border-radius: $border-rad $border-rad 0 0;
     }
     a{
         color: black;
@@ -177,10 +178,15 @@ a:link {
 
 /* Footer*/
 
-footer {
+.footer {
     background-color: #353535;
     width: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+.footer-titre{
+    padding: 10px;
 }
 .footer-logo {
     display: flex;
@@ -192,7 +198,15 @@ footer {
         width: 10%;
     }
 }
-
+.footer-mention{
+    padding: 0;
+    margin: 0;
+}
+.color-hover{
+    color: $primary;
+    position: relative;
+    top: -20px;
+}
 /* test coeur
 .icone:hover{
         visibility: hidden;
