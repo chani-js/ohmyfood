@@ -22,9 +22,28 @@ $tertiaire: #99e2d0;
     align-items: center;
     color: #fff;
 }
+@keyframes clignoter {
+    0% {
+         opacity:1;
+    }
+    40%{
+        opacity:0; 
+    }
+    100%{ 
+        opacity:1; 
+    }
+  }
+@keyframes circle{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /*animation*/
-/*@keyframes show {
+@keyframes show {
     0% {
       opacity:0;
     }
@@ -69,6 +88,9 @@ $tertiaire: #99e2d0;
         border: 30px solid;
         text-align: center;
         color: $secondary;
+        
+        animation-name: circle;
+        animation-duration: 2s;
 
     }
     .animation2 {
@@ -77,8 +99,10 @@ $tertiaire: #99e2d0;
         border: 30px solid;
         text-align: center;
         color: $tertiaire;
+        animation-name: circle;
+        animation-duration: 4s;
     }
-}*/
+}
 
 html,
 body {
@@ -202,7 +226,7 @@ a:link {
     background-color: #fff;
     margin-bottom: 15px;
     img {
-        object-fit: cover;
+        object-fit: cover ;
         height: 200px;
         border-radius: $border-rad $border-rad 0 0;
         width: 100%;
@@ -211,12 +235,30 @@ a:link {
         color: black;
     }
 }
+.new{
+    background-color: #99e2d0;
+    color: #1b6150;
+    padding: .5rem;
+    border-radius: .125rem;
+    width: 25%;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    position:absolute ;
+    left: 65%;
+    bottom: 1%;
+    /* clignotement*/
+   animation-duration: 1s;
+   animation-name: clignoter;
+   animation-iteration-count: infinite;
+   transition: none;
+
+}
 .rest-text {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     padding: 10px;
     p {
         padding: 5px 0;
