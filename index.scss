@@ -24,25 +24,26 @@ $tertiaire: #99e2d0;
 }
 
 /*animation*/
-@keyframes loader-animation{
-    0%{
-        opacity: 1;
-        visibility: visible;
-        color: $primary;
-         
-     }
-     90%{
-         opacity: 1;
-         color: $secondary;
-     }
-     100%{
-         opacity: 0;
-         visibility: hidden;
-     }
-
-
+/*@keyframes show {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
 }
-.loader{
+@keyframes loader-animation {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.loader {
     position: fixed;
     z-index: 100;
     top: 0;
@@ -55,35 +56,29 @@ $tertiaire: #99e2d0;
     align-items: center;
     justify-content: space-around;
     animation: loader-animation 3s forwards;
-    .animation{
+    .animation {
         display: inline-block;
         border-radius: 100px;
         border: 30px solid;
-        width: 50px;
-        height: 50px;
         text-align: center;
         color: $primary;
     }
-    .animation1{
+    .animation1 {
         display: inline-block;
         border-radius: 100px;
         border: 30px solid;
-        width: 50px;
-        height: 50px;
         text-align: center;
         color: $secondary;
+
     }
-    .animation2{
+    .animation2 {
         display: inline-block;
         border-radius: 100px;
         border: 30px solid;
-        width: 50px;
-        height: 50px;
         text-align: center;
         color: $tertiaire;
     }
-}
-
+}*/
 
 html,
 body {
@@ -162,14 +157,14 @@ a:link {
     border-radius: 15px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
-   
+
     i {
         display: inline;
     }
 }
-.op-card:active{
+.op-card:active {
     background-color: lighten($color: $secondary, $amount: 10%);
-    .grey{
+    .grey {
         color: $primary;
     }
 }
@@ -184,7 +179,7 @@ a:link {
     background-color: $primary;
 }
 
-.grey{
+.grey {
     color: gray;
 }
 
@@ -193,9 +188,9 @@ a:link {
     background-color: #f3f3f3;
     display: flex;
     flex-direction: column;
-    h2{
+    h2 {
         padding: 5px 10px;
-        font-family:  Roboto, sans-serif;
+        font-family: Roboto, sans-serif;
     }
 }
 .rest-card {
@@ -212,41 +207,39 @@ a:link {
         border-radius: $border-rad $border-rad 0 0;
         width: 100%;
     }
-    a{
+    a {
         color: black;
     }
 }
-.rest-text{
+.rest-text {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
     padding: 10px;
-    p{
+    p {
         padding: 5px 0;
         margin: 0;
     }
-    .marge{
+    .marge {
         margin: 0;
     }
 }
-.rest-title{
+.rest-title {
     width: 70%;
 }
-.icone{
+.icone {
     width: 10%;
-    
 }
-.color-hover{
+.color-hover {
     display: none;
     position: relative;
     top: -20px;
     color: $primary;
-    
 }
-.color-hover:hover{
-        display: initial;
+.color-hover:hover {
+    display: initial;
 }
 
 /* Footer*/
@@ -257,9 +250,16 @@ a:link {
     color: white;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
-.footer-titre{
+.footer-container{
+    width: 80%;
     padding: 10px;
+    margin: 0;
+}
+.footer-titre {
+    padding: 10px;
+    font-size: 1em;
 }
 .footer-logo {
     display: flex;
@@ -269,11 +269,13 @@ a:link {
     i {
         display: inline;
         width: 10%;
+        margin: 0;
+        padding-right: 5px;
     }
 }
 .footer-mention{
-    padding: 0;
-    margin: 0;
+    p{
+        margin: 0;
+        padding: 5px;
+    }
 }
-
-

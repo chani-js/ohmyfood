@@ -155,10 +155,18 @@ body * h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 80%;
+  padding: 10px;
+  margin: 0;
 }
 
 .footer-titre {
   padding: 10px;
+  font-size: 1em;
 }
 
 .footer-logo {
@@ -174,10 +182,12 @@ body * h2 {
 .footer-logo i {
   display: inline;
   width: 10%;
+  margin: 0;
+  padding-right: 5px;
 }
 
-.footer-mention {
-  padding: 0;
+.footer-mention p {
   margin: 0;
+  padding: 5px;
 }
 /*# sourceMappingURL=menu.css.map */
