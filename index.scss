@@ -45,13 +45,14 @@ $tertiaire: #99e2d0;
 /*animation*/
 @keyframes loader-animation {
     0% {
-        opacity: 1;
+        opacity: 0;
     }
     90% {
         opacity: 1;
     }
     100% {
         opacity: 0;
+        visibility: hidden;
     }
 }
 .loader {
@@ -80,8 +81,7 @@ $tertiaire: #99e2d0;
         border: 30px solid;
         text-align: center;
         color: $secondary;
-        animation-name: circle;
-        animation-duration: 2s;
+        animation:circle 2s forwards;
 
     }
     .animation2 {
@@ -90,8 +90,7 @@ $tertiaire: #99e2d0;
         border: 30px solid;
         text-align: center;
         color: $tertiaire;
-        animation-name: circle;
-        animation-duration: 4s;
+        animation:circle 3s forwards;
     }
 }
 
@@ -311,4 +310,29 @@ a:link {
         margin: 0;
         padding: 5px;
     }
+}
+
+
+
+
+
+/* partie responsive*/
+@media screen and (min-width: 651px) and (max-width:1030px){
+.slogan{
+    text-align: center;
+}
+.operation{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.restaurant{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 }
