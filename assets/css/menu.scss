@@ -30,7 +30,7 @@ body {
     padding: 0;
 }
 /*Général*/
-body * {
+body *{
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     width: 100%;
@@ -160,8 +160,24 @@ body * {
 
 
 /* partie responsive */
-@media screen and (min-width: 651px) and (max-width:1030px){
-    body{
-        width: 80%;
+@media screen and (min-width: 768px) and (max-width:1024px) and(orientation : portrait){
+    .slogan{
+        text-align: center;
     }
-}
+    .operation{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .restaurant{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    }
+    
+  
