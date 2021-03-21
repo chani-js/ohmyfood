@@ -348,18 +348,27 @@ a:link {
 }
 
 .icone {
+  position: relative;
   width: 10%;
 }
 
-.color-hover {
-  display: none;
-  position: relative;
-  top: -20px;
-  color: #9356dc;
+.icone:hover .color-hover {
+  opacity: 1;
 }
 
-.color-hover:hover {
-  display: initial;
+.icone:hover .display-hover {
+  opacity: 0;
+}
+
+.color-hover {
+  position: absolute;
+  left: 0;
+  color: #9356dc;
+  opacity: 0;
+}
+
+.display-hover {
+  opacity: 1;
 }
 
 /* Footer*/

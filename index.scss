@@ -264,17 +264,27 @@ a:link {
     width: 70%;
 }
 .icone {
+    position: relative;
     width: 10%;
+    &:hover{
+        .color-hover{
+            opacity: 1;
+        }
+        .display-hover{
+            opacity: 0;
+        }
+    }
 }
 .color-hover {
-    display: none;
-    position: relative;
-    top: -20px;
+    position: absolute;
+    left: 0;
     color: $primary;
+    opacity: 0;
 }
-.color-hover:hover {
-    display: initial;
+.display-hover{
+    opacity: 1;
 }
+
 
 /* Footer*/
 
