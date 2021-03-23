@@ -143,6 +143,31 @@ body * h2 {
           transition-duration: 0.3s;
 }
 
+.anim-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.over-anim {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  background-color: green;
+}
+
+.over-anim .fa-circle-anim {
+  color: green;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.over-anim .fa-circle-anim:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 /* Footer*/
 .footer {
   background-color: #353535;

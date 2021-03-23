@@ -200,6 +200,8 @@ a:link {
 
 .grey {
     color: gray;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* partie restaurant */
@@ -355,10 +357,7 @@ a:link {
 }
 
 @media screen and (min-width:1024px){
-    .container{
-        width: 80%;
-        margin: auto;
-    }
+
     .slogan{
         text-align: center;
     }
@@ -367,12 +366,12 @@ a:link {
     }
     /*partie fonctionnement*/
     .operation{
-        width: 80%;
+        width: 60%;
         margin: auto;
         .op-card{
-            width: fit-content;
+            width: 30%;
             position: relative;
-            padding-left: 5px;
+            font-size: 0.8em;
             .op-number{
                 position: absolute;
                 top: 6px;
@@ -394,8 +393,9 @@ a:link {
     
     /* partie restaurant*/
     .restaurant{
-        width: 80%;
+        width: 60%;
         margin: auto;
+        margin-top: 20px;
         padding: auto;
         h2{
             height: fit-content;
@@ -424,9 +424,25 @@ a:link {
         display: flex;
         flex-wrap: wrap;
     }
+    .footer-titre{
+        position: relative;
+        left: 10%;
     }
-
-
+    .footer-container{
+        position: relative;
+        left: 40%;
+    }
+.footer-mention{
+    display: flex;
+    padding: 20px;
+}
+.footer-logo{
+    p{
+        width: fit-content;
+    }
+}
+    }
+    
 
 
 

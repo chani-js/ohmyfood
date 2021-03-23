@@ -253,6 +253,8 @@ a:link {
 
 .grey {
   color: gray;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* partie restaurant */
@@ -459,10 +461,6 @@ a:link {
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
-    width: 80%;
-    margin: auto;
-  }
   .slogan {
     text-align: center;
   }
@@ -473,15 +471,13 @@ a:link {
   }
   /*partie fonctionnement*/
   .operation {
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   .operation .op-card {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 30%;
     position: relative;
-    padding-left: 5px;
+    font-size: 0.8em;
   }
   .operation .op-card .op-number {
     position: absolute;
@@ -504,8 +500,9 @@ a:link {
   }
   /* partie restaurant*/
   .restaurant {
-    width: 80%;
+    width: 60%;
     margin: auto;
+    margin-top: 20px;
     padding: auto;
   }
   .restaurant h2 {
@@ -541,6 +538,25 @@ a:link {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .footer-titre {
+    position: relative;
+    left: 10%;
+  }
+  .footer-container {
+    position: relative;
+    left: 40%;
+  }
+  .footer-mention {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+  }
+  .footer-logo p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 /*# sourceMappingURL=index.css.map */
