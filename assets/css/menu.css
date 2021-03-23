@@ -78,7 +78,6 @@ body * h2 {
   width: 100%;
   background-color: white;
   border-radius: 15px;
-  padding: 5px;
   margin-top: 15px;
   height: auto;
   -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -92,6 +91,16 @@ body * h2 {
           flex-direction: row;
   -webkit-animation: slideup 1.5s;
           animation: slideup 1.5s;
+}
+
+.restau-container .choice:hover .fa-circle-anim {
+  opacity: 1;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.restau-container .choice:hover .over-anim {
+  width: 60px;
 }
 
 .plate-name {
@@ -113,6 +122,28 @@ body * h2 {
 
 .price .euro {
   padding-top: 20px;
+}
+
+.over-anim {
+  width: 0;
+  height: 60px;
+  text-align: center;
+  background-color: green;
+  border-radius: 0 15px 15px 0;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
+  text-align: center;
+}
+
+.over-anim .fa-circle-anim {
+  opacity: 0;
+  color: white;
+  position: relative;
+  top: 20px;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 .title {
@@ -146,26 +177,6 @@ body * h2 {
 .anim-container {
   position: relative;
   overflow: hidden;
-}
-
-.over-anim {
-  width: 60px;
-  height: 60px;
-  border: 1px solid black;
-  text-align: center;
-  padding: 20px;
-  background-color: green;
-}
-
-.over-anim .fa-circle-anim {
-  color: green;
-  background-color: white;
-  border-radius: 50px;
-}
-
-.over-anim .fa-circle-anim:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 /* Footer*/

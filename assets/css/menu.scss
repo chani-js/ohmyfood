@@ -67,13 +67,23 @@ body *{
         width: 100%;
         background-color: white;
         border-radius: $border-rad;
-        padding: 5px;
         margin-top: 15px;
         height: auto;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
         display: flex;
         flex-direction: row;
         animation: slideup 1.5s;
+        &:hover{
+            .fa-circle-anim{
+                opacity: 1;
+                transform: rotate(-360deg);
+                
+            }
+            .over-anim{
+                width: 60px; 
+                
+            }
+        }
     }
 }
 .plate-name {
@@ -93,6 +103,24 @@ body *{
         padding-top: 20px;
     }
 }
+.over-anim{
+    width: 0;
+    height: 60px;
+    text-align: center;
+    background-color: green;
+    border-radius: 0 $border-rad $border-rad 0; 
+    transition: width 0.7s;
+    text-align: center;
+    
+    .fa-circle-anim{
+        opacity: 0;
+        color: white;
+        position: relative;
+        top: 20px;
+        transition: transform 0.7s;
+    }
+}
+
 
 .title {
     border-bottom: 3px solid #99e2d0;
@@ -119,22 +147,8 @@ body *{
     position: relative;
     overflow: hidden;
 }
-.over-anim{
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    text-align: center;
-    padding: 20px;
-    background-color: green;
-    .fa-circle-anim{
-        color: green;
-        background-color: white;
-        border-radius: 50px;
-        &:hover{
-            transform: rotate(360deg);
-        }
-    }
-}
+
+
 
 /* Footer*/
 
