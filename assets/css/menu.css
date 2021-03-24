@@ -93,14 +93,14 @@ body * h2 {
           animation: slideup 1.5s;
 }
 
-.restau-container .choice:hover .fa-circle-anim {
+.restau-container .choice:active .fa-circle-anim {
   opacity: 1;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
 
-.restau-container .choice:hover .over-anim {
-  width: 60px;
+.restau-container .choice:active .over-anim {
+  width: 100px;
 }
 
 .plate-name {
@@ -228,7 +228,7 @@ body * h2 {
 }
 
 /* partie responsive */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .slogan {
     text-align: center;
   }
@@ -259,6 +259,13 @@ body * h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=menu.css.map */

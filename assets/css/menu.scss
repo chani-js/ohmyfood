@@ -73,14 +73,14 @@ body *{
         display: flex;
         flex-direction: row;
         animation: slideup 1.5s;
-        &:hover{
+        &:active{
             .fa-circle-anim{
                 opacity: 1;
                 transform: rotate(-360deg);
                 
             }
             .over-anim{
-                width: 60px; 
+                width: 100px; 
                 
             }
         }
@@ -194,7 +194,7 @@ body *{
 
 
 /* partie responsive */
-@media screen and (min-width: 768px) and (max-width:1024px) and(orientation : portrait){
+@media screen and (min-width: 768px) and (max-width:1023px){
     .slogan{
         text-align: center;
     }
@@ -212,6 +212,12 @@ body *{
         justify-content: center;
         flex-direction: column;
     }
+    }
+    @media screen and (min-width: 1024px){
+        .container{
+            width: 80%;
+            margin: auto;
+        }
     }
     
   
