@@ -100,6 +100,7 @@ body *{
 .plate-name {
     width: 80%;
     padding: 10px;
+    overflow: hidden;
 }
 .overflow-ellipsis {
     white-space: nowrap; 
@@ -116,7 +117,6 @@ body *{
 }
 .over-anim{
     width: 0;
-    height: 60px;
     text-align: center;
     background-color: $tertiaire;
     border-radius: 0 $border-rad $border-rad 0; 

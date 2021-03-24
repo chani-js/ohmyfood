@@ -1,3 +1,4 @@
+
 /* variables*/
 $padding: 15px;
 $border-rad: 15px;
@@ -109,7 +110,6 @@ body * {
     h2 {
         font-family: Shrikhand, sans-serif;
     }
-    cursor: pointer;
 }
 
 a:link {
@@ -215,6 +215,10 @@ a:link {
     }
 }
 .rest-card {
+    a {
+        color: black;
+        width: 100%;
+    }
     display: flex;
     width: 90%;
     margin: auto;
@@ -229,9 +233,7 @@ a:link {
         border-radius: $border-rad $border-rad 0 0;
         width: 100%;
     }
-    a {
-        color: black;
-    }
+   
 }
 .new{
     background-color: #99e2d0;
@@ -459,7 +461,7 @@ a:link {
     }
     
 }
-    }
+}
     
 
 

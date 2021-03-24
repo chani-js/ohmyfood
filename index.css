@@ -128,7 +128,6 @@ body * {
           box-sizing: border-box;
   font-family: Roboto, sans-serif;
   cursor: pointer;
-  cursor: pointer;
 }
 
 body * h1,
@@ -288,16 +287,17 @@ a:link {
   margin-bottom: 15px;
 }
 
+.rest-card a {
+  color: black;
+  width: 100%;
+}
+
 .rest-card img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
   border-radius: 15px 15px 0 0;
   width: 100%;
-}
-
-.rest-card a {
-  color: black;
 }
 
 .new {
