@@ -46,13 +46,24 @@ body *{
 
 .header {
     width: 100%;
-    display: flex;
-    align-self: start;
+    text-align: center;
+    display: inline-block;
+    position: relative;
     .titre {
-        margin-right: 130px;
+        margin: auto;
+        display: inline;
     }
-    i {
-        margin: 10px;
+    .fas{
+        display: inline;
+    }
+    a {
+        display: inline;
+        text-decoration: none;
+        color: black;
+        font-size: 1.4em;
+        padding: 5px;
+        position: absolute;
+        left: -40%;
     }
 }
 /* container*/
@@ -107,7 +118,7 @@ body *{
     width: 0;
     height: 60px;
     text-align: center;
-    background-color: green;
+    background-color: $tertiaire;
     border-radius: 0 $border-rad $border-rad 0; 
     transition: width 0.7s;
     text-align: center;
@@ -186,6 +197,10 @@ body *{
         margin: 0;
         padding: 5px;
     }
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 
 
@@ -218,6 +233,7 @@ body *{
             width: 80%;
             margin: auto;
         }
+        
     }
     
   

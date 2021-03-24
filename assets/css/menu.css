@@ -49,19 +49,28 @@ body * h2 {
 /* header*/
 .header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: start;
+  text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
 .header .titre {
-  margin-right: 130px;
+  margin: auto;
+  display: inline;
 }
 
-.header i {
-  margin: 10px;
+.header .fas {
+  display: inline;
+}
+
+.header a {
+  display: inline;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4em;
+  padding: 5px;
+  position: absolute;
+  left: -40%;
 }
 
 /* container*/
@@ -128,7 +137,7 @@ body * h2 {
   width: 0;
   height: 60px;
   text-align: center;
-  background-color: green;
+  background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
   -webkit-transition: width 0.7s;
   transition: width 0.7s;
@@ -225,6 +234,11 @@ body * h2 {
 .footer-mention p {
   margin: 0;
   padding: 5px;
+}
+
+.footer-mention a {
+  text-decoration: none;
+  color: white;
 }
 
 /* partie responsive */
