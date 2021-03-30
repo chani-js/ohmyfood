@@ -161,6 +161,7 @@ a:link {
 .slogan {
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 
 .slogan .slogan h3 {
