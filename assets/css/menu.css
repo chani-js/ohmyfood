@@ -310,9 +310,6 @@ body * h2 {
     position: relative;
     top: 0px;
   }
-  .restaurant {
-    border-radius: 15px;
-  }
   .name-container {
     width: 100%;
     display: -webkit-box;
@@ -371,6 +368,44 @@ body * h2 {
     position: absolute;
     bottom: -80px;
     right: 35%;
+  }
+  .footer-titre {
+    position: relative;
+    left: 60%;
+  }
+  .footer-container {
+    position: relative;
+  }
+  .footer-mention {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: relative;
+    left: 15%;
+  }
+  .footer-mention a {
+    position: relative;
+    bottom: 5px;
+  }
+  .footer-mention p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 10px;
+  }
+  .footer-logo p {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    bottom: 10px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
