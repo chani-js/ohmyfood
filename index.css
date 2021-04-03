@@ -145,6 +145,10 @@ a:link {
   background-image: linear-gradient(0deg, #9356dc, #dd79da);
 }
 
+.fa-heart {
+  font-size: 1.7em;
+}
+
 /*partie header */
 .titre {
   text-align: center;
@@ -474,6 +478,10 @@ a:link {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+  .explore:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#9f60ec), to(#f58cf1));
+    background-image: linear-gradient(0deg, #9f60ec, #f58cf1);
   }
   /*partie fonctionnement*/
   .operation {

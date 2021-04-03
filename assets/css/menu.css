@@ -105,8 +105,6 @@ body * h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-animation: slideup 1.5s;
-          animation: slideup 1.5s;
   overflow: hidden;
 }
 
@@ -118,6 +116,21 @@ body * h2 {
 
 .restau-container .choice:active .over-anim {
   width: 50px;
+}
+
+.entree {
+  -webkit-animation: slideup 0.5s;
+          animation: slideup 0.5s;
+}
+
+.Plat {
+  -webkit-animation: slideup 1.5s;
+          animation: slideup 1.5s;
+}
+
+.dessert {
+  -webkit-animation: slideup 2.5s;
+          animation: slideup 2.5s;
 }
 
 .plate-name {
@@ -287,13 +300,6 @@ body * h2 {
 
 @media screen and (min-width: 1024px) {
   .container {
-    width: 80%;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
     width: 100%;
     position: relative;
     margin: auto;
@@ -309,6 +315,14 @@ body * h2 {
     margin: auto;
     position: relative;
     top: 0px;
+  }
+  .choice:hover .fa-circle-anim {
+    opacity: 1;
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  .choice:hover .over-anim {
+    width: 50px;
   }
   .name-container {
     width: 100%;

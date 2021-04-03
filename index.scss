@@ -5,6 +5,7 @@ $border-rad: 15px;
 $primary: #9356dc;
 $secondary: #dd79da;
 $tertiaire: #99e2d0;
+$degrade :linear-gradient(0deg, $primary, $secondary);
 
 @mixin display-center {
     display: block;
@@ -119,6 +120,9 @@ a:link {
 .fa-heart:active {
     background-image: linear-gradient(0deg, $primary, $secondary);
 }
+.fa-heart{
+    font-size: 1.7em;
+}
 
 /*partie header */
 .titre {
@@ -157,7 +161,7 @@ a:link {
     color: white;
     cursor: pointer;
     font-size: 1.1em;
-    background-image: linear-gradient(0deg, $primary, $secondary);
+    background-image: $degrade;
     box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
     transition-duration: 0.3s;
 }
@@ -370,6 +374,9 @@ a:link {
     }
     .explore{
         width: fit-content;
+        &:hover{
+            background-image: linear-gradient(0deg,#9f60ec, #f58cf1);
+        }
     }
     /*partie fonctionnement*/
     .operation{
